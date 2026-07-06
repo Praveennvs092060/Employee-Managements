@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Solutions | Modern Landing Page</title>
+    <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="/css/style.css">
+</head>
+<body>
+
+    <!-- Header / Sticky Navigation Bar -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-accent">Nex</span>Gen Solutions
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle navigation" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Innovating Today, Empowering Tomorrow</span>
+                    <h1 class="hero-title">Empowering Businesses Through Modern Technology</h1>
+                    <p class="hero-description">We build scalable web applications, enterprise software, and innovative digital solutions that help businesses grow faster using modern technologies.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-graphic-container">
+                    <div class="hero-graphic-wrapper">
+                        <!-- Abstract floating graphic shapes -->
+                        <div class="floating-element float-1"></div>
+                        <div class="floating-element float-2"></div>
+                        <div class="floating-element float-3"></div>
+                        <!-- Mock coding panel illustration -->
+                        <div class="hero-card">
+                            <div class="card-header">
+                                <span class="card-dot red"></span>
+                                <span class="card-dot yellow"></span>
+                                <span class="card-dot green"></span>
+                            </div>
+                            <div class="card-body-mock">
+                                <p class="code-line"><span class="code-keyword">package</span> com.nexgen.service;</p>
+                                <p class="code-line"><span class="code-keyword">@Service</span></p>
+                                <p class="code-line"><span class="code-keyword">public class</span> <span class="code-function">EnterpriseEngine</span> {</p>
+                                <p class="code-line indent"><span class="code-keyword">public void</span> <span class="code-function">scaleBusiness</span>() {</p>
+                                <p class="code-line indent-2"><span class="code-keyword">var</span> portal = <span class="code-keyword">new</span> <span class="code-function">SpringApplication</span>();</p>
+                                <p class="code-line indent-2">portal.<span class="code-function">deployCloud</span>(<span class="code-string">"active"</span>);</p>
+                                <p class="code-line indent-2"><span class="code-comment">// System optimized 🚀</span></p>
+                                <p class="code-line indent">}</p>
+                                <p class="code-line">}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">We are a forward-looking software development company specializing in delivering high-value technical integrations.</p>
+                </div>
+                <div class="about-content-wrapper">
+                    <div class="about-main-text">
+                        <h3>Who We Are</h3>
+                        <p>NexGen Solutions is a software company specializing in modern web applications, enterprise software, cloud solutions, and digital transformation. We help organizations modernize their operational stack, build high-performance services, and construct rich user interfaces.</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <div class="about-icon-wrapper">
+                                <svg class="about-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h4>Our Mission</h4>
+                            <p>To enable companies to expand through reliable web infrastructures, standardizing clean development frameworks, and optimizing client engagements.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon-wrapper">
+                                <svg class="about-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                </svg>
+                            </div>
+                            <h4>Our Vision</h4>
+                            <p>To lead the software consultancy landscape by creating fast, scalable, and intuitive software applications that reduce complex architectures into easy-to-manage solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Discover our main technological domains designed to accelerate business systems and customer conversions.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Responsive, accessible frontend engineering using modern CSS structures, layout patterns, and robust vanilla scripting paradigms.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Java Spring Boot Development</h3>
+                        <p class="service-description">High-performance backends constructed via modern controllers, REST endpoints, thymeleaf templates, and secure middleware routing.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-description">Professional designs establishing cohesive design tokens, typography scales, glassmorphism shadows, and smooth interface animations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle">Have a project or a quick question? Fill out the secure contact form below and our team will respond shortly.</p>
+                </div>
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h3>Connect with our team to start building.</h3>
+                        <p class="contact-description">We are excited to hear about your business requirements and help you scale your operational processes.</p>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>hello@nexgensolutions.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4>Our Headquarters</h4>
+                                    <p>100 Innovation Parkway, Suite 500, Tech City</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                                <span class="error-message" id="nameError">Full name is required.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                                <span class="error-message" id="emailError">Please enter a valid email address.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea id="message" name="message" class="form-input text-area" placeholder="How can we help you?" required></textarea>
+                                <span class="error-message" id="messageError">Message content is required.</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="spinner" id="btnSpinner"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-accent">Nex</span>Gen Solutions
+                </a>
+                <p>Innovating Today, Empowering Tomorrow. Delivering responsive software infrastructure and backend services.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Contact Details</h4>
+                <p class="footer-contact-info">📧 hello@nexgensolutions.com</p>
+                <p class="footer-contact-info">📞 +1 (555) 839-2910</p>
+                <p class="footer-contact-info">📍 Tech City, Suite 500</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NexGen Solutions. All rights reserved. Designed for Task 1 Internship Submission.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Toast Alert -->
+    <div id="toastNotification" class="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✓</span>
+            <span id="toastMessage" class="toast-message">Form submitted successfully!</span>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script th:src="@{/js/script.js}" src="/js/script.js"></script>
+</body>
+</html>
